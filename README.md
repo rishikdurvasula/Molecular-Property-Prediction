@@ -34,3 +34,36 @@ Trained on **QM9 dataset** (molecular structures and DFT-calculated properties)
 
 
 
+---
+
+## How to Run the Project
+
+### 1️⃣ **Install Dependencies**
+pip install -r deployment/requirements.txt
+2️⃣ Train the Model
+python src/train.py
+3️⃣ Run Distributed Training on AWS
+python src/distributed_train.py
+4️⃣ Start the API Server
+python deployment/app.py
+The API will be available at: http://localhost:5000/predict
+
+5️⃣ Docker Deployment (Optional)
+docker build -t gnn-api .
+docker run -p 5000:5000 gnn-api
+
+---
+
+## Results & Performance
+The GNN model successfully predicts molecular properties with high accuracy.
+Using AWS GPU clusters significantly speeds up training through distributed computation.
+Deployment via Flask API and Docker ensures easy access and scalability.
+
+## Future Improvements
+🔹 Implement Graph Attention Networks (GATs) for better performance
+🔹 Train on larger molecular datasets beyond QM9
+🔹 Deploy via AWS Lambda and API Gateway for serverless inference
+🔹 Optimize training with hyperparameter tuning
+
+
+
