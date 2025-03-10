@@ -55,9 +55,9 @@ docker run -p 5000:5000 gnn-api
 ---
 
 ## Results & Performance
-The GNN model successfully predicts molecular properties with high accuracy.
-Using AWS GPU clusters significantly speeds up training through distributed computation.
-Deployment via Flask API and Docker ensures easy access and scalability.
+- The GNN model successfully predicts molecular properties with high accuracy.
+- Using AWS GPU clusters significantly speeds up training through distributed computation.
+- Deployment via Flask API and Docker ensures easy access and scalability.
 
 ## Future Improvements
 🔹 Implement Graph Attention Networks (GATs) for better performance
