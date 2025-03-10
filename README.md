@@ -46,6 +46,7 @@ python src/train.py
 python src/distributed_train.py
 ### 4️⃣ Start the API Server
 python deployment/app.py
+
 The API will be available at: http://localhost:5000/predict
 
 ### 5️⃣ Docker Deployment (Optional)
